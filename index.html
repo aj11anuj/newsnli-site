@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NewsNLI Dataset</title>
+<style>
+:root{
+--bg:#0d1117;
+--panel:#161b22;
+--panel2:#1d2430;
+--line:#2d3748;
+--text:#e6edf3;
+--muted:#98a6b3;
+--blue:#4ea1ff;
+--green:#36c275;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+margin:0;
+font-family:Inter,system-ui,-apple-system,sans-serif;
+background:linear-gradient(180deg,#0d1117,#111827);
+color:var(--text);
+line-height:1.7;
+}
+.container{max-width:1100px;margin:auto;padding:0 24px}
+nav{
+position:sticky;top:0;z-index:100;
+background:rgba(13,17,23,.88);
+backdrop-filter:blur(10px);
+border-bottom:1px solid var(--line);
+}
+.nav{height:64px;display:flex;justify-content:space-between;align-items:center}
+.brand{font-weight:700;font-size:1.1rem}
+.links a{
+color:#c9d1d9;
+text-decoration:none;
+margin-left:22px;
+font-size:.95rem;
+}
+.links a:hover{color:var(--blue)}
+.hero{
+display:grid;
+grid-template-columns:1.8fr 1fr;
+gap:36px;
+padding:72px 0 56px;
+align-items:start;
+}
+h1{
+font-size:3.5rem;
+margin:0;
+line-height:1;
+letter-spacing:-1px;
+}
+.subtitle{
+font-size:1.2rem;
+color:var(--muted);
+max-width:700px;
+margin:20px 0 28px;
+}
+.btn{
+display:inline-block;
+padding:12px 18px;
+background:var(--blue);
+color:#fff;
+text-decoration:none;
+border-radius:10px;
+font-weight:600;
+margin-right:10px;
+}
+.btn.secondary{
+background:transparent;
+border:1px solid var(--line);
+color:#dbe7f5;
+}
+.card{
+background:var(--panel);
+border:1px solid var(--line);
+border-radius:16px;
+padding:22px;
+}
+.summary{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:18px;
+}
+.metric span{
+display:block;
+font-size:.8rem;
+color:var(--muted);
+}
+.metric strong{
+display:block;
+font-size:1.6rem;
+margin-top:4px;
+white-space:nowrap;
+}
+section{margin:28px 0}
+.section-title{
+font-size:1.55rem;
+margin-bottom:16px;
+}
+.timeline .event{
+display:grid;
+grid-template-columns:120px 1fr;
+padding:14px 0;
+border-bottom:1px solid var(--line);
+}
+.timeline .event:last-child{border:none}
+.date{color:var(--blue);font-weight:600}
+.region{margin-top:24px}
+.progress{
+margin:16px 0 16px 20px;
+}
+.progress .top{
+display:flex;
+justify-content:space-between;
+margin-bottom:8px;
+}
+.track{
+height:10px;
+background:#243142;
+border-radius:100px;
+overflow:hidden;
+}
+.fill{
+height:100%;
+background:linear-gradient(90deg,#2d7ef7,#69b2ff);
+}
+details{
+background:var(--panel2);
+border:1px solid var(--line);
+border-radius:10px;
+padding:16px;
+margin:12px 0;
+}
+summary{cursor:pointer;font-weight:600}
+footer{
+margin-top:60px;
+padding:40px 0;
+text-align:center;
+color:var(--muted);
+border-top:1px solid var(--line);
+}
+footer a{color:var(--blue)}
+@media(max-width:900px){
+.hero{grid-template-columns:1fr}
+.links{display:none}
+h1{font-size:2.6rem}
+}
+</style>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+<div class="container nav">
+<div class="brand">NewsNLI Dataset</div>
+<div class="links">
+<a href="#updates">Updates</a>
+<a href="#progress">Progress</a>
+<a href="#about">About</a>
+<a href="#participate">Participate</a>
+<a href="#faq">FAQ</a>
+</div>
+</div>
+</nav>
+
+<div class="container">
+
+<header class="hero">
+<div>
+<div style="color:#4ea1ff;font-size:.85rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;">Open Research Initiative</div>
+<h1>NewsNLI Dataset</h1>
+<p class="subtitle">
+Advancing multilingual reasoning research through large scale human annotated Natural Language Inference data.
+</p>
+</div>
+
+<div class="card">
+<div class="summary">
+<div class="metric"><span>Languages</span><strong>6</strong></div>
+<div class="metric"><span>Modalities</span><strong>Text & Audio</strong></div>
+<div class="metric"><span>Last updated</span><strong>1st Aug, 2026</strong></div>
+<div class="metric"><span>Next update</span><strong>16th Aug, 2026</strong></div>
+</div>
+</div>
+
+</header>
+
+<section id="updates" class="card">
+<div class="section-title">Latest Updates</div>
+<div class="timeline">
+<div class="event"><div class="date">1st Aug, 2026</div><div><b>Initiative launched</b><br>The project's site is now live, with detailed instructions and a systematic process to conduct the workflow with less hindrance. Some annotators have completed the preliminary tasks and successfully started working on it.</div></div>
+<div class="event"><div class="date">20th July, 2026</div><div><b>First preliminary annotation test was conducted.</b><br>More than 30 people expressed their willingness to contribute across 20+ languages.</div></div>
+<div class="event"><div class="date">7th July, 2026</div><div><b>Core Dataset was finished</b><br>NewsNLI dataset in English language was completed with 10,189 samples, balanced across all three NLI categories.</div></div>
+</div>
+</section>
+
+<section id="about" class="card">
+<div class="section-title">About</div>
+<p>We are building NewsNLI, a large scale multilingual NLI dataset designed to advance reasoning capabilities across diverse languages. Our goal is to carefully annotate the dataset by native speakers who not only validate the semantic relationship between sentence pairs but also provide spoken reasoning explaining their decisions.</p>
+<p> Rather than simply scaling the number of examples, NewsNLI focuses on reasoning quality and cultural authenticity. By collecting annotations directly from native speakers, we aim to build a dataset that better reflects how people naturally reason in their own languages.</p>
+
+<details><summary>What is NLI?</summary><p>Natural Language Inference (NLI) is one of the fundamental tasks in NLP in which you are given two sentences (premise and hypothesis) and the objective is to determine whether the hypothesis is:
+(Entailment: supported by the premise), (Contradiction: inconsistent with the premise), (Neutral: neither supported nor contradicted by the premise).</p></details>
+<details><summary>What's the utility of NewsNLI Dataset?</summary><p>Despite the simplicity of NLI, it measures a model's ability to perform semantic understanding, contextual interpretation, and logical inference. Most existing NLI benchmarks have been developed primarily for high resource languages. While multilingual datasets such as XNLI have expanded language coverage, many languages remain severely underrepresented. As a result, today's multilingual language models often exhibit substantially weaker reasoning capabilities outside English.</p> 
+<p>
+In our previous research on NLI, we showed that
+<a href="https://aclanthology.org/2026.africanlp-main.22/" target="_blank" rel="noopener noreferrer">
+multilingual reasoning does not improve by scaling data alone
+</a>
+and that
+<a href="https://arxiv.org/abs/2606.03304" target="_blank" rel="noopener noreferrer">
+carefully designed prompting strategies significantly enhance reasoning in low-resource languages
+</a>.
+NewsNLI builds on these findings by moving that same emphasis on structured reasoning from prompt engineering to dataset construction, embedding it into annotation guidelines, quality control, and native speaker reasoning rather than relying on inference time prompts or expanding dataset size unecessarily.
+</p></details>
+
+
+</section>
+
+<section id="progress" class="card">
+<div class="section-title">Language coverage progress</div>
+
+<div class="region"><b>African Languages</b></div>
+<div class="progress">
+<div class="top"><span>Hausa</span><span>21 / 10000</span></div>
+<div class="track"><div class="fill"></div></div>
+</div>
+<div class="progress">
+<div class="top"><span>Yoruba</span><span>21 / 10000</span></div>
+<div class="track"><div class="fill"></div></div>
+</div>
+
+<div class="region"><b>East Asian Languages</b></div>
+<div class="progress">
+<div class="top"><span>Korean</span><span>21 / 10000</span></div>
+<div class="track"><div class="fill"></div></div>
+</div>
+
+<div class="region"><b>South Asian Languages</b></div>
+<div class="progress">
+<div class="top"><span>Bengali</span><span>21 / 10000</span></div>
+<div class="track"><div class="fill"></div></div>
+</div>
+<div class="progress">
+<div class="top"><span>Tamil</span><span>21 / 10000</span></div>
+<div class="track"><div class="fill"></div></div>
+</div>
+<div class="progress">
+<div class="top"><span>Marwari</span><span>21 / 10000</span></div>
+<div class="track"><div class="fill"></div></div>
+</div>
+
+</section>
+
+<section id="participate" class="card">
+<div class="section-title">Participate</div>
+<div style="display:flex;align-items:center;justify-content:center;gap:28px;flex-wrap:wrap">
+
+  <div style="width:200px;height:200px;border:2px solid #ccc;padding:20px;border-radius:16px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;box-sizing:border-box;">
+    <h3 style="margin-bottom:16px;">① Review Project</h3>
+    <p style="margin:0;">Read the guidelines and understand the project.</p>
+  </div>
+
+  <span style="font-size:36px;">→</span>
+
+  <a href="https://forms.gle/BeLtqEYR3aEysLvTA"
+     target="_blank"
+     style="text-decoration:none;color:inherit;">
+    <div style="width:200px;height:200px;border:2px solid #ccc;padding:20px;border-radius:16px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;box-sizing:border-box;cursor:pointer;">
+      <h3 style="margin-bottom:16px;">② Apply</h3>
+      <p style="margin:0;color:#60A5FA;text-decoration:underline;">
+        Fill the Application Form
+      </p>
+    </div>
+  </a>
+
+  <span style="font-size:36px;">→</span>
+
+  <div style="width:200px;height:200px;border:2px solid #ccc;padding:20px;border-radius:16px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;box-sizing:border-box;">
+    <h3 style="margin-bottom:16px;">③ Get Started</h3>
+    <p style="margin:0;">Receive onboarding and begin contributing.</p>
+  </div>
+
+
+</div>
+</section>
+
+<section id="faq" class="card">
+<div class="section-title">FAQ</div>
+<details><summary>Are you planning to publish a research paper, publicly release the dataset, or both?</summary><p>Both. The dataset will be released on Hugging Face. The accompanying research paper will be submitted to an ACL-family venue. The publication priority is ACL/NeurIPS D&amp;B Track > EMNLP/NAACL/EACL > LREC/COLING.</p></details>
+<details><summary>How are languages assigned? Can contributors choose their language?</summary><p>Language assignment depends on project needs and annotator availability.</p></details>
+<details><summary>Why are there three annotators per language?</summary><p>Multiple annotators support quality assurance through triangulation, since comparing annotations improves reliability, and distribute the workload so the project does not depend on a single annotator.</p></details>
+<details><summary>Am I expected to recruit other annotators for the language I want to contribute to?</summary><p>No. But for very low-resource languages, help from existing annotators is appreciated and if you already know qualified speakers, you are welcome to invite them.</p></details>
+<details><summary>Why is there a test before the main annotation work?</summary><p>The test verifies that annotators understand the guidelines and can perform the task correctly.</p></details>
+<details><summary>What exactly does the annotation measure?</summary><p>It checks that you understand the annotation guidelines, distinguish between the labels, and provide appropriate reasoning that you feel is right for that sample in the native language. Carefully read the premise, hypothesis and record your natural reasoning explaining why the relationship between the premise and hypothesis is entailment, contradiction, or neutral. Focus on your reasoning even if the sample is incorrectly labelled, your reasoning should provide that clarity.</p></details>
+<details><summary>Should I pay attention mainly to the NLI label?</summary><p>No.  The reasoning is more important than simply focusing on the label.</p></details>
+<details><summary>Should the annotation be based only on the provided headline or premise?</summary><p>Yes. Don't look for external context.</p></details>
+<details><summary>How will the recorded audio reasoning be used?</summary><p>Your audio reasoning will enable research into how native speakers reason compared to AI models, whether reasoning patterns transfer across languages, what information is preserved or lost when speech is converted into text, and whether native spoken reasoning captures cultural or linguistic nuances beyond written transcriptions.</p></details>
+<details><summary>What is the expected workload?</summary><p>There is no fixed weekly quota. The expectation is consistent progress according to your availability and commitment. The project intentionally avoids assigning a minimum number of samples so contributors do not treat that number as a stopping point. However, you are expected to communicate the progress atleast once in every 15 days.</p></details>
+<details><summary>How many samples are you aiming for?</summary><p>The original target is approximately 10,000 annotated samples per language. This may not be achievable for every language, especially low-resource ones. The objective is to get as close to that target as possible or, at minimum, achieve reasonably balanced coverage across all supported languages.</p></details>
+<details><summary>How long is the project expected to last?</summary><p>There is no fixed duration. Annotation continues until sufficient high-quality data has been collected for the project&apos;s goals. The expected timeline is the last week of November but it may take even longer.</p></details>
+<details><summary>Will annotators become co-authors on the research paper?</summary><p>Potentially, yes. Contributors who make substantial, high-quality contributions and take responsibility for their language throughout the project will be included as co-authors on the research paper and contributors on the dataset card. Smaller but valuable contributions will instead be recognized in the paper&apos;s acknowledgements.</p></details>
+<details><summary>Is this a paid annotation project running via grants under affiliation of a specific community?</summary><p>No, it is not a funded project and the appointed annotators and contributors are volunteerly contributing to it to advance research in this area. People working on it are affiliated with various institutions including ML Collective, Masakhane, EleutherAI, and etc.</p></details>
+</section>
+<footer>
+If you still have questions or need assistance, feel free to reach out.<br>
+Contact: <a href="mailto:aj11anuj123@gmail.com">Anuj Tiwari</a>
+</footer>
+
+</div>
+
+<script>
+function updateProgressBars() {
+  document.querySelectorAll('.progress').forEach((progress) => {
+    progress.querySelectorAll('.top').forEach((top) => {
+      const countText = top.querySelector('span:last-child')?.textContent || '';
+      const match = countText.match(/(\d+)\s*\/\s*(\d+)/);
+      const track = top.nextElementSibling;
+      const fill = track?.querySelector('.fill');
+      if (!match || !fill) return;
+
+      const current = Number(match[1]);
+      const total = Number(match[2]);
+      const percent = total > 0 ? Math.min(100, Math.max(0, (current / total) * 100)) : 0;
+
+      fill.style.width = `${percent}%`;
+    });
+  });
+}
+
+window.addEventListener('DOMContentLoaded', updateProgressBars);
+</script>
+
+</body>
+</html>

@@ -182,8 +182,8 @@ Advancing multilingual reasoning research through large scale human annotated Na
 <div class="summary">
 <div class="metric"><span>Languages</span><strong>8</strong></div>
 <div class="metric"><span>Modalities</span><strong>Text & Audio</strong></div>
-<div class="metric"><span>Last updated</span><strong>17th Aug, 2026</strong></div>
-<div class="metric"><span>Next update</span><strong>1st Sept, 2026</strong></div>
+<div class="metric"><span>Last updated</span><strong>2nd Sept, 2026</strong></div>
+<div class="metric"><span>Next update</span><strong>20th Sept, 2026</strong></div>
 </div>
 </div>
 
@@ -192,6 +192,7 @@ Advancing multilingual reasoning research through large scale human annotated Na
 <section id="updates" class="card">
 <div class="section-title">Latest Updates</div>
 <div class="timeline">
+<div class="event"><div class="date">2nd Sept, 2026</div><div><b>3 annotation teams have already completed more than 100 samples.</b><br>The Hausa, Korean, and Bengali teams are actively progressing, while the other teams are moving at a slower pace. Some confusion arose around Neutral vs. Entailment categorization in cases with insufficient context, so additional guidelines have been issued and updated on the site.</div></div>
 <div class="event"><div class="date">17th Aug, 2026</div><div><b>Expanded linguistic participation with annotation efforts steadily progressed.</b><br>Hindi and Amharic language annotators have also joined the project, while most of the current teams have shared their progress and are halfway through Batch 1 annotation.</div></div>
 <div class="event"><div class="date">1st Aug, 2026</div><div><b>Initiative launched</b><br>The project's site is now live, with detailed instructions and a systematic process to conduct the workflow with less hindrance. Some annotators have completed the preliminary tasks and successfully started working on it.</div></div>
 <div class="event"><div class="date">20th July, 2026</div><div><b>First preliminary annotation test was conducted.</b><br>More than 30 people expressed their willingness to contribute across 20+ languages.</div></div>
@@ -227,7 +228,7 @@ NewsNLI builds on these findings by moving that same emphasis on structured reas
 
 <div class="region"><b>African Languages</b></div>
 <div class="progress">
-<div class="top"><span>Hausa</span><span>21 / 10000</span></div>
+<div class="top"><span>Hausa</span><span>171 / 10000</span></div>
 <div class="track"><div class="fill"></div></div>
 </div>
 <div class="progress">
@@ -235,19 +236,19 @@ NewsNLI builds on these findings by moving that same emphasis on structured reas
 <div class="track"><div class="fill"></div></div>
 </div>
 <div class="progress">
-<div class="top"><span>Amharic</span><span>21 / 10000</span></div>
+<div class="top"><span>Amharic</span><span>71 / 10000</span></div>
 <div class="track"><div class="fill"></div></div>
 </div>
 
 <div class="region"><b>East Asian Languages</b></div>
 <div class="progress">
-<div class="top"><span>Korean</span><span>21 / 10000</span></div>
+<div class="top"><span>Korean</span><span>141 / 10000</span></div>
 <div class="track"><div class="fill"></div></div>
 </div>
 
 <div class="region"><b>South Asian Languages</b></div>
 <div class="progress">
-<div class="top"><span>Bengali</span><span>21 / 10000</span></div>
+<div class="top"><span>Bengali</span><span>121 / 10000</span></div>
 <div class="track"><div class="fill"></div></div>
 </div>
 <div class="progress">
@@ -306,8 +307,9 @@ NewsNLI builds on these findings by moving that same emphasis on structured reas
 <details><summary>Am I expected to recruit other annotators for the language I want to contribute to?</summary><p>No. But for very low-resource languages, help from existing annotators is appreciated and if you already know qualified speakers, you are welcome to invite them.</p></details>
 <details><summary>Why is there a test before the main annotation work?</summary><p>The test verifies that annotators understand the guidelines and can perform the task correctly.</p></details>
 <details><summary>What exactly does the annotation measure?</summary><p>It checks that you understand the annotation guidelines, distinguish between the labels, and provide appropriate reasoning that you feel is right for that sample in the native language. Carefully read the premise, hypothesis and record your natural reasoning explaining why the relationship between the premise and hypothesis is entailment, contradiction, or neutral. Focus on your reasoning even if the sample is incorrectly labelled, your reasoning should provide that clarity.</p></details>
-<details><summary>Should I pay attention mainly to the NLI label?</summary><p>No.  The reasoning is more important than simply focusing on the label.</p></details>
-<details><summary>Should the annotation be based only on the provided headline or premise?</summary><p>Yes. Don't look for external context.</p></details>
+<details><summary>Should I pay attention mainly to the NLI label?</summary><p>No. The reasoning is more important than simply focusing on the label.</p></details>
+<details><summary>Should the annotation be based only on the provided headline/premise?</summary><p>Yes. Don't look for external context.</p></details>
+<details><summary>How should we categorize when the context given in premise is not sufficient to provide a concrete judgement and we are confused whether to label it as Neutral or Entailment?</summary><p>You might encounter samples where the premise may not explicitly support every detail in the hypothesis. Therefore, focus on overall alignment rather than strict fact-by-fact evidence. If the hypothesis is largely aligned with what the premise conveys, label it Entailment; if it contradicts the premise, label it Contradiction; otherwise, label it Neutral. This broader alignment based approach is used because traditional strict NLI definitions that earlier datasets used were mainly designed for synthetic datasets, whereas news based dataset in our case consist of premise that is made-up using Headlines of news articles and hypothesis using summarized news article content. So, naturally for many cases premise will be shorter, and hypothesis will be longer and it won't be possible for a premise to provide enough content to support every claim made in hypothesis that's why our approach used an adapted form of NLI. Therefore, reasoning and overall semantic alignment are more important than requiring the premise to support every individual claim.</p></details>
 <details><summary>How will the recorded audio reasoning be used?</summary><p>Your audio reasoning will enable research into how native speakers reason compared to AI models, whether reasoning patterns transfer across languages, what information is preserved or lost when speech is converted into text, and whether native spoken reasoning captures cultural or linguistic nuances beyond written transcriptions.</p></details>
 <details><summary>What is the expected workload?</summary><p>There is no fixed weekly quota. The expectation is consistent progress according to your availability and commitment. The project intentionally avoids assigning a minimum number of samples so contributors do not treat that number as a stopping point. However, you are expected to communicate the progress atleast once in every 15 days.</p></details>
 <details><summary>How many samples are you aiming for?</summary><p>The original target is approximately 10,000 annotated samples per language. This may not be achievable for every language, especially low-resource ones. The objective is to get as close to that target as possible or, at minimum, achieve reasonably balanced coverage across all supported languages.</p></details>
